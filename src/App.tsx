@@ -7,8 +7,11 @@ function App() {
       <div className='segunda-linha-vertical'></div>
       <div className='linha-horizontal'></div>
 
-      <h1>Meu Projeto</h1>
+      <p id='Do'> A Fazer </p>
+      <p id='Doing'> Fazendo </p>
+      <p id='Done'> Feito </p>
     </div>
+    
   )
 }
 
