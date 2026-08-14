@@ -1,0 +1,41 @@
+.sidebar-gaveta {
+    position: fixed;
+    background-color: #82E8FF;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: width 0.4s ease-in-out;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-gaveta.aberta {
+    width: 280px;
+}
+
+.sidebar-gaveta.fechada {
+    width: 60px;
+}
+
+.botao-abrir {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    min-width: 280px;
+}
+
+.botao-abrir:hover {
+    background-color: #82e8ffa8;
+}
+
+.conteudo-interno {
+  padding: 15px;
+  min-width: 250px; 
+}

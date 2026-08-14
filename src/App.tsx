@@ -1,8 +1,12 @@
 import './App.css'
+import Sidebar from './Sidebar'
 
 function App() {
   return (
     <div className="quadro">
+
+      <Sidebar></Sidebar>
+
       <div className='primeira-linha-vertical'></div>
       <div className='segunda-linha-vertical'></div>
       <div className='linha-horizontal'></div>
