@@ -1,4 +1,5 @@
-import { userState, useState } from 'react'
+import { useState } from 'react'
+import { PostIt } from './PostIt'
 import './Sidebar.css'
 
 function Sidebar() {
@@ -8,17 +9,24 @@ function Sidebar() {
         setAberta(!aberta)
     }
 
+    function aoComecarArrastar(evento: React.DragEvent, cor: string) {
+      evento.dataTransfer.setData("corPostIt", cor)
+    }
+
   return (
     <div className={aberta ? "sidebar-gaveta aberta" : "sidebar-gaveta fechada"}>
       
       <button className="botao-abrir" onClick={() => setAberta(!aberta)}>
         ☰
       </button>
-
+      {aberta && (
       <div className="conteudo-interno">
         <h2>Meu Menu</h2>
-        <p>+ Post-it Amarelo</p>
+          <div className='miniatura-postit' draggable={true} onDragStart={(evento) => aoComecarArrastar(evento, 'amarelo')}>
+            Puxar Post-It Amarelo   
+          </div>
       </div>
+      )}
 
     </div>
   )

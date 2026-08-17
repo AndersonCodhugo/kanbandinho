@@ -14,6 +14,8 @@ function App() {
       <p id='Do'> A Fazer </p>
       <p id='Doing'> Fazendo </p>
       <p id='Done'> Feito </p>
+
+      
     </div>
     
   )
