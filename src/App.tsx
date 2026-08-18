@@ -2,8 +2,20 @@ import './App.css'
 import Sidebar from './Sidebar'
 
 function App() {
+
+  function permitirPouso(evento: DragEvent) {
+    evento.preventDefault(); 
+  }
+
+  function aoSoltar(evento: DragEvent) {
+    const posicaoX = evento.clientX;
+    const posicaoY = evento.clientY;
+
+    console.log(`Você soltou no pixel X: ${posicaoX} e Y: ${posicaoY}`);
+  }
+
   return (
-    <div className="quadro">
+    <div className="quadro" onDragOver={permitirPouso} onDrop={aoSoltar}>
 
       <Sidebar></Sidebar>
 

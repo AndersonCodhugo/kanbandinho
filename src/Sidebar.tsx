@@ -23,7 +23,7 @@ function Sidebar() {
       <div className="conteudo-interno">
         <h2>Meu Menu</h2>
           <div className='miniatura-postit' draggable={true} onDragStart={(evento) => aoComecarArrastar(evento, 'amarelo')}>
-            Puxar Post-It Amarelo   
+            <PostIt></PostIt>  
           </div>
       </div>
       )}

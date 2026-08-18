@@ -37,7 +37,8 @@
 
 .conteudo-interno {
   padding: 15px;
-  min-width: 250px; 
+  max-width: 240px; 
+  min-height: 240px; 
 }
 
 .miniatura-postit {
@@ -46,8 +47,8 @@
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
   cursor: grab; 
+  background-color: transparent;
 }
 
 .miniatura-postit:active {
